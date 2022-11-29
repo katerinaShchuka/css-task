@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Mulish:wght@400;900&display=swap');
+
+body {
+    padding-right: 3em;
+    background: #252530;
+    font-family: 'Mulish', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Corben', cursive;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 55px;
+    width: 100%;
+    border: 1px solid #000;
+    background: #252530;
+}
+
+#logoimg {
+    position: absolute;
+    width: 13%;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#btnbuy {
+    border-radius: 6px;
+    width: 8%;
+    height: 35px;
+    background: #82b540;
+    color: white;
+    margin-top: 10px;
+    transform: translateX(1300px);
+    
+}
+
+.header {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+margin-top: 5em;
+}
+
+#logo-header {
+    width: 9%;
+    position: absolute;
+    top: 6em;
+    left: 8em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 0.7em;
+    color: white;
+}
+
+li::after {
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    transform: translateY(-1em);
+    opacity: 0;
+    background-color: orange;
+    display: inline-block;
+}
+
+li:hover::after {
+    opacity: 1;
+}
+
+li:first-child::after {
+    opacity: 1;
+}
+
+#search-logo {
+    width: 40px;
+    margin-top: -5px;
+}
+
+.content-sidebar {
+   writing-mode: vertical-lr;
+   transform: rotate(180deg);
+   padding-right: 40px;
+    position: fixed;
+    color: white;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    top: 40%;
+}
+  
+section {
+margin-top: 3em;
+display: grid;
+margin-left: 6em;
+grid-template-areas:
+"big big small1 small2"
+"big big small3 small4";
+grid-gap: 15px;
+}
+
+button {
+    margin: 1em;
+    border-radius: 1em;
+    border: 1px solid white;
+    font-size: 0.8em;
+    font-family: 'Corben', cursive;
+    padding: 0em 1em;
+    background: linear-gradient(rgba(150, 150, 149, 0.1), rgba(153, 153, 152, 0.1));
+
+}
+
+.div6 button:hover {
+    background-color: white;
+}
+
+.div7 button:hover {
+    background-color: #252530;
+    border: 1px solid #252530;
+    color: rgb(208, 208, 90);
+}
+
+.div8 button:hover {
+    background-color: white;
+}
+
+.btn-pin {
+    width: 6em;
+    height: 2em;
+    font-size: 10px;
+    background-color: white;
+    
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   align-items: flex-start;
+   margin: 1em;
+   line-height: 1.7em;
+}
+
+.div1 {
+    color: white;
+    grid-area: big;
+    border-radius: 0.8em;
+    background-image: linear-gradient(rgba(130, 131, 126, 0.5), rgba(130, 131, 126, 0.5)), url('../images/photo.jpeg');
+    background-size: cover;
+    height: 25em;
+    width: 36em;
+    transform: translate(0.5s);
+}
+
+.div1 button {
+    margin-bottom: 16em;
+}
+
+.div1:hover {
+    transform: translateY(-0.5em);
+}
+
+.section_title {
+    font-size: 40px;
+    margin: 0;
+    font-family: 'Corben', cursive;
+    line-height: 1.4em;
+}
+
+.section_title_sm {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Corben', cursive;
+}
+
+.div2 {
+    background-color: #4443ea;
+    border-radius: 20px;
+    color: white;
+    width: 20em;
+    background-image: linear-gradient(rgba(13, 41, 150, 0.8), rgba(23, 17, 109, 0.8)), url('../images/photo1.jpeg');
+    background-size: cover;
+    transform: translate(0.5s);
+}
+
+.div2:hover {
+    transform: translateY(-0.5em);
+}
+
+.div3 {
+    background-color: #feb468;
+    border-radius: 20px;
+    color: rgb(38, 37, 43);
+    width: 20em;
+    transform: translate(0.5s);
+}
+
+.div3:hover {
+    transform: translateY(-0.5em);
+}
+
+.div4 {
+    background-color: #8b359e;
+    border-radius: 20px;
+    color: white;
+    width: 20em;
+    background-image: linear-gradient(rgba(119, 31, 133, 0.8), rgba(143, 29, 143, 0.8)), url('../images/photo2.jpeg');
+    background-size: cover;
+    transform: translate(0.5s);
+}
+
+.div4:hover {
+    transform: translateY(-0.5em);
+}
+
+.div5 {
+    background-color: #f9a2d2;
+    border-radius: 20px;
+    color: rgb(38, 37, 43);
+    width: 20em;
+    background-image: linear-gradient(rgba(194, 131, 200, 0.8), rgba(213, 136, 203, 0.8)), url('../images/photo3.jpeg');
+    background-size: cover;
+    transform: translate(0.5s);
+}
+
+.div5:hover {
+    transform: translateY(-0.5em);
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4em 0em 1em 2em;
+}
+
+.div6 {
+    height: 600px;
+    background-image: linear-gradient(rgba(130, 131, 126, 0.5), rgba(130, 131, 126, 0.5)), url('../images/main.jpeg');
+    color: white;
+    background-size: 100%;
+    border-radius: 1.6em;
+    margin: 0em 3em 3em 6em;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.div6:hover {
+    background-size: 105%;
+}
+
+.div7 {
+    height: 600px;
+    background-image: linear-gradient(rgba(185, 201, 48, 0.5), rgba(187, 220, 55, 0.5)), url('../images/photo4.jpeg');
+    background-size: 100%;
+    color: rgb(38, 37, 43);
+    border-radius: 1.6em;
+    margin: 0em 3em 3em 6em;
+    transition: 0.5s;
+}
+
+.div7:hover {
+    background-size: 105%;
+}
+
+.div8 {
+    height: 600px;
+    background-image: linear-gradient(rgba(130, 131, 126, 0.5), rgba(130, 131, 126, 0.5)), url('../images/photo5.jpeg');
+    background-size: 100%;
+    color: white;
+    border-radius: 1.6em;
+    margin: 0em 3em 3em 6em;
+    transition: 0.5s;
+}
+
+.div8:hover {
+    background-size: 105%;
+}
+
+.unit {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Corben', cursive;
+    font-weight: 900;
+    margin: 0;
+    padding: 1.5em 2.5em 0em 2.5em;
+    line-height: 1.4em;
+}
+
+.unit sub {
+    font-size: 15px;
+    margin-top: -4.5em;
+}
+
+.footer {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-family: 'Mulish', sans-serif;
+    font-size: 13px;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "div9 div9 div9 div10 div10 div10"
+    "div9 div9 div9 div10 div10 div10"
+    "div11 div11 div12 div12 div13 div13"
+    "div11 div11 div12 div12 div13 div13"
+    "div11 div11 div12 div12 div13 div13";
+    grid-gap: 30px;
+    width: 85%;
+    margin-left: 100px;
+}
+
+.div9 {
+    height: 400px;
+    background-image: linear-gradient(rgba(119, 70, 145, 0.5), rgba(142, 96, 159, 0.5)), url('../images/photo6.jpeg');
+    background-size: 100%;
+    border-radius: 15px;
+    grid-area: div9;
+    font-size: 45px;
+    color: #252530;
+}
+
+.div10 {
+    height: 400px;
+    background-image: linear-gradient(rgba(183, 155, 44, 0.5), rgba(196, 173, 44, 0.5)), url('../images/photo7.jpeg');
+    background-size: 100%;
+    border-radius: 15px;
+    grid-area: div10;
+    font-size: 45px;
+    color: #252530;
+    transition: 0.5s;
+}
+
+.div11 {
+    height: 450px;
+    background-image: linear-gradient(rgba(130, 131, 126, 0.5), rgba(130, 131, 126, 0.5)), url('../images/photo8.jpeg');
+    background-size: 100%;
+    border-radius: 15px;
+    grid-area: div11;
+    color: white;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.div12 {
+    height: 450px;
+    background-image: linear-gradient(rgba(217, 146, 227, 0.5), rgba(199, 134, 200, 0.5)), url('../images/photo9.jpeg');
+    background-size: 100%;
+    border-radius: 15px;
+    grid-area: div12;
+    color: #252530;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.div13 {
+    height: 450px;
+    background-image: linear-gradient(rgba(130, 131, 126, 0.5), rgba(130, 131, 126, 0.5)), url('../images/photo10.jpeg');
+    background-size: 100%;
+    border-radius: 15px;
+    grid-area: div13;
+    color: white;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.div9:hover, .div10:hover, .div11:hover, .div12:hover, .div13:hover {
+    background-size: 105%;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 25px;
+    margin: 1em 0em 1em 1em;
+    line-height: 1.5em;
+}
+
+.index sub {
+    font-size: 12px;
+    margin-top: -5em;
+}
+
+#div9text, #div12text, #div13text {
+    color: rgb(38, 37, 43);
+    font-size: 15px;
+    margin-right: 2em;
+    line-height: 1.5em;
+}
+
+.div9 button, .div10 button, .div11 button, .div12 button, .div13 button {
+    font-size: 10px;
+}
+
+.div9 button:hover, .div10 button:hover, .div12 button:hover {
+    background-color: #252530;
+    color: white;
+    border: #252530;
+}
+
+.div11 button:hover, .div13 button:hover {
+    background-color: white;
+    color: #252530;
+    border: white;
+}
+
+.index h4 {
+    margin-bottom: 0.4em;
+}
+
+#btnload {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #252530;
+    border-radius: 15px;
+    border: 1px solid black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    height: 70px;
+    width: 65%;
+    margin-left: 270px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+#btnload:hover {
+    background-color: orange;
+}
+
+.footertext {
+    color: white;
+    font-size: 30px;
+    font-family: 'Mulish', sans-serif;
+}
+
+#email {
+    background-color: transparent;
+    font-size: 20px;
+    margin-top: 2em;
+    border: none;
+}
+
+#subscribe {
+background-color: #252530;
+border-radius: 15px;
+border: 1px solid black;
+color: white;
+text-transform: uppercase;
+font-size: 15px;
+height: 70px;
+width: 15%;
+}
+
+#subscribe:hover {
+    background-color: orange;
+}
+
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.form_sub {
+animation: typing 2s infinite steps(15,end);
+overflow: hidden;
+white-space: nowrap;
+color: white;
+font-size: 20px;
+display: inline-block;
+margin: 0 auto;
+}
+
+@keyframes typing{
+    from {
+width: 0;
+    } to {
+width: 100%;
+    }
+}
+
+.footer_list {
+    font-size: 10px;
+}
+
+.icons_list {
+    font-size: 15px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    height: 1em;
+    display: inline-block;
+}
